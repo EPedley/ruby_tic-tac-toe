@@ -191,7 +191,7 @@ grid.show_grid
 puts "Welcome to TIC TAC TOE"
 puts
 
-while grid.is_there_a_winner == false and round < 10
+while grid.is_there_a_winner == false and round < 9
   player = whose_turn(round, player_1, player_2)
   player_input = get_player_move(player, grid)
   grid.update_grid(player.token, player_input)
